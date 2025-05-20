@@ -1,0 +1,93 @@
+body {
+    background-color: #caf0f8;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    
+}
+
+/* Cards */
+.card {
+    margin-left: 20px;
+    margin-top: 90px;
+    border-color: #03045e;
+    z-index: 1;
+    
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.card-body {
+    margin-top: 10px;
+    border-top: 1px solid #03045e;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #90e0ef; 
+    border-bottom: 3px solid #03045e;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Options -> Selects */
+select option {
+    background-color: #afeffa;
+}
+
+.form-select {
+    background-color: #afeffa;
+    border: 1px solid #03045e;
+}
+
+/* Input Range */
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background-color: #00b4d8;
+}
+
+/* Table */
+section:nth-child(5) {
+    display: block;
+    border-top: 3px solid #03045e;
+    border-bottom: 3px solid #03045e;
+    padding: 15px 0 15px 0;
+}
+.table {
+    width: 80%;
+    margin: 10px auto 0 auto;
+    background-color: white;
+    --bs-table-bg: none;
+    border: 3px solid #03045e;
+}
+
+
+.first-table-section {
+    background-color: #00b4d8;
+}
+
+.second-table-section {
+    background-color: #afeffa;
+}
+
+/* Figure */
+section:nth-child(6) {
+    border-bottom: 3px solid #03045e;
+}
+
+.figure {
+    border: 3px solid #03045e;
+    margin: 15px 10px 10px 10px;
+}
+
+.figure-caption {
+    text-align: center;
+}

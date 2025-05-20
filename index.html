@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="styles.css" rel="stylesheet">
+    <script src="main.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Bootstrap Styling</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg show">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarN" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ppedv.de">PPEDV Seite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/ppedvAG">PPEDV Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 6 Card Collection -->
+    <section style="display: flex; border-bottom: 3px solid #03045e; padding-bottom: 15px;">
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/diversity.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Teamwork</b> - Mehrere Menschen arbeiten gemeinsam an Aufgaben</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/working-hours.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Gleitzeit</b> - Arbeitnehmer kann seine Arbeitszeit selber verteilen</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/willpower.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Willenskraft</b> - Umsetzen der Vorstellungen oder Ziele in die Realität durch Handlungen</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/discipline.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Disziplin</b> - Beherrschen des eignen Willens, der eigenen Gefühle und Neigugngen, um etwas zu erreichen</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/good-feedback.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Leistungsfähig</b> - eine bestimmte Leistung über einen längeren Zeitraum zu erbringen</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; background-color: #afeffa;">
+            <img src="Icons/agile.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text"><b>Durchhaltevermögen</b> - Trotz Hindernissen, Rückschläge an einem Ziel festzuhalten und nicht aufzugeben</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formular -->
+    <section style="margin-top: 10px; border-bottom: 3px solid #03045e; padding-bottom: 15px;">
+        <div class="mb-3" style="width: 60%; margin: 0 auto;">
+            <label for="vornamen" class="form-label">Vornamen</label>
+            <input type="text" class="form-control" id="vornamen" placeholder="Max" style="background-color: #afeffa; border: 1px solid #03045e;">
+        </div>
+
+        <div class="mb-3" style="width: 60%; margin: 0 auto;">
+            <label for="nachnamen" class="form-label">Nachnamen</label>
+            <input type="text" class="form-control" id="nachnamen" placeholder="Mustermann" style="background-color: #afeffa; border: 1px solid #03045e;">
+        </div>
+
+        <div class="mb-3" style="width: 60%; margin: 0 auto;">
+            <label for="email" class="form-label">E-Mail</label>
+            <input type="email" class="form-control" id="email" placeholder="example@gmail.com" style="background-color: #afeffa; border: 1px solid #03045e;">
+        </div>
+
+        <select class="form-select" aria-label="Default select example" style="width: 60%; margin: 0 auto;">
+            <option>Wieviele Eigenschaften besitzen Sie von den Karten?</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="Alle">Alle</option>
+        </select>
+    </section>
+
+    <!-- Knowlegde guessing -->
+    <section style="width: 80%; margin: 10px auto 0 auto;">
+        <label for="htmlRange" class="form-label">HTML range</label><br>
+        <input type="range" class="form-range" id="htmlRange">
+        <br>
+        <label for="cssRange" class="form-label">CSS range</label><br>
+        <input type="range" class="form-range" id="cssRange">
+        <br>
+        <label for="jsRange" class="form-label">JS range</label><br>
+        <input type="range" class="form-range" id="jsRange">
+    </section>
+
+    <!-- Table Infos -->
+    <section>
+        <table class="table table-bordered table-hover">
+            <tr class="first-table-section">
+                <td>ID</td>
+                <td>FirstName</td>
+                <td>LastName</td>
+                <td>Portfolio</td>
+            </tr>
+
+            <tr class="second-table-section">
+                <td>1</td>
+                <td>Max</td>
+                <td>Mustermann</td>
+                <td>HTML, CSS, JS</td>            
+            </tr>
+
+            <tr class="first-table-section">
+                <td>2</td>
+                <td>Jakob</td>
+                <td>Petersen</td>
+                <td>.NET, WPF</td>            
+            </tr>
+
+            <tr class="second-table-section">
+                <td>3</td>
+                <td>Daniel</td>
+                <td>Jung</td>
+                <td>SQL Betrieb</td>            
+            </tr>
+
+            <tr class="first-table-section">
+                <td>4</td>
+                <td>Klaus</td>
+                <td>Müller</td>
+                <td>Flutter</td>            
+            </tr>
+
+            <tr class="second-table-section">
+                <td>5</td>
+                <td>Marco</td>
+                <td>Schneider</td>
+                <td>M365 Einsteiger</td>            
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <section style="display: flex; margin: 0 auto; width: 50%;">
+            <figure class="figure">
+                <img src="Icons/BMW.webp" class="figure-img img-fluid rounded" alt="..." width="300" height="200">
+                <figcaption class="figure-caption">BMW M4</figcaption>
+            </figure>
+    
+            <figure class="figure">
+                <img src="Icons/Mercedes.png" class="figure-img img-fluid rounded" alt="..." width="300" height="200" style="margin-top: 17px;">
+                <figcaption class="figure-caption">Mercedes C63</figcaption>
+            </figure>
+    
+            <figure class="figure">
+                <img src="Icons/Audi.png" class="figure-img img-fluid rounded" alt="..." width="300" height="200" style="margin-top: 50px;">
+                <figcaption class="figure-caption">Audi R8</figcaption>
+            </figure>
+        </section>    
+    </section>
+</body>
+</html>
